@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+<meta charset="UTF-8">
+<title>Đặt Hàng</title>
+
+<style>
+body {
+    font-family: Arial;
+    background-color: #fdf6f0;
+}
+
+.container {
+    width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+h2 {
+    text-align: center;
+    color: #b8860b;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+button {
+    width: 100%;
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Thông tin đặt hàng</h2>
+
+<form action="https://formsubmit.co/dothimynhung2006@gmail.com" method="POST">
+  <input type="hidden" name="_subject" value="Đơn hàng mới từ 36Shop">
+
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="http://127.0.0.1:5500/tintintin/index.html?success=true">
+<label>Sản phẩm</label>
+<input type="text" name="product" id="product" readonly>
+
+<label>Tên khách</label>
+<input type="text" name="name" required>
+
+<label>SĐT</label>
+<input type="text" name="phone" required>
+
+<label>Địa chỉ</label>
+<input type="text" name="address" required>
+
+<button type="submit">Gửi đơn hàng</button>
+
+</form>
+
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+document.getElementById("product").value = params.get("product");
+</script>
+
+<footer>
+
+<div style="text-align:center;margin-top:40px">
+
+<h3>36Shop</h3>
+<p>Chuyên cung cấp trang sức cao cấp với thiết kế tinh xảo và đẳng cấp.</p>
+
+<p>📍 Địa chỉ: thôn 2, Vinh Thanh</p>
+<p>📞 Hotline: 0333959716</p>
+<p>📧 Email: huutri181020088@gmail.com</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>

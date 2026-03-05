@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>36Shop</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Logo */
+        .logo {
+            text-align: center;
+            padding: 20px;
+            background-color: black;
+            color: gold;
+            margin: 0;
+        }
+
+        /* Thanh điều hướng */
+        nav {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: gold;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        /* Container sản phẩm */
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        /* Sản phẩm */
+        .product {
+            width: 23%;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+            padding: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .product button {
+            background-color: black;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .product button:hover {
+            background-color: gold;
+            color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="c.css">
+</head>
+
+<body>
+
+<h1 class="logo">36Shop</h1>
+<h1 class="logo"> Nơi vẻ đẹp trở thành vĩnh cửu </h1>    
+<p id="message" style="text-align:center;color:green;font-weight:bold;font-size:20px;"></p>
+<nav>
+    <a href="#gioithieu">Trang chủ</a>
+    <a href="#sanpham">Sản phẩm</a>
+</nav>
+
+<section id="gioithieu">
+    <h2>Trang chủ</h2>
+    <p>36Shop chuyên cung cấp trang sức cao cấp với thiết kế tinh xảo và chất lượng vượt trội.</p>
+    <p>Thành lập năm 2015, phục vụ hơn 10.000 khách hàng trên toàn quốc.</p>
+    <ul>
+        <li>Top 10 thương hiệu trang sức uy tín</li>
+        <li>Giải thưởng thiết kế sáng tạo 2022</li>
+        <li>Hơn 10.000 khách hàng tin tưởng</li>
+    </ul>
+ <h1> cửa hàng của chúng tôi đã qua kiểm định của quốc tế</h1>
+ <img src="m.jpg" width="600" height="300">
+</section>
+
+<section id="sanpham">
+    <h2>💍 Các sản phẩm</h2>
+
+ <div class="product-container">
+
+    <div class="product">
+        <h3>Nhẫn Kim Cương</h3>
+        <img src="q.jpg">
+        <p>Giá: 80.000.000 VNĐ</p>
+        <a href="order.html?product=Nhẫn Kim Cương">
+            <button>Mua ngay</button>
+        </a>
+    </div>
+
+    <div class="product">
+        <h3>Dây Chuyền Vàng 18K</h3>
+        <img src="w.jpg">
+        <p>Giá: 25.000.000 VNĐ</p>
+        <a href="order.html?product=Dây Chuyền Vàng 18K">
+            <button>Mua ngay</button>
+        </a>
+    </div>
+
+    <div class="product">
+        <h3>Bông Tai Ngọc Trai</h3>
+        <img src="e.jpg">
+        <p>Giá: 30.000.000 VNĐ</p>
+        <a href="order.html?product=Bông Tai Ngọc Trai">
+            <button>Mua ngay</button>
+        </a>
+    </div>
+
+    <div class="product">
+        <h3>Nhẫn Cưới Vàng Trắng</h3>
+        <img src="r.jpg">
+        <p>Giá: 40.000.000 VNĐ</p>
+        <a href="order.html?product=Nhẫn Cưới Vàng Trắng">
+            <button>Mua ngay</button>
+        </a>
+    </div>
+
+    <div class="product">
+        <h3>Vòng Tay Vàng 24K</h3>
+        <img src="h.jpg">
+        <p>Giá: 50.000.000 VNĐ</p>
+        <a href="order.html?product=Vòng Tay Vàng 24K">
+            <button>Mua ngay</button>
+        </a>
+    </div>
+
+    <div class="product">
+        <h3>Dây Chuyền Kim Cương</h3>
+        <img src="g.jpg">
+        <p>Giá: 120.000.000 VNĐ</p>
+        <a href="order.html?product=Dây Chuyền Kim Cương">
+            <button>Mua ngay</button>
+        </a>
+    </div>
+
+    <div class="product">
+        <h3>Lắc Tay Đá Sapphire</h3>
+        <img src="f.jpg">
+        <p>Giá: 60.000.000 VNĐ</p>
+        <a href="order.html?product=Lắc Tay Đá Sapphire">
+            <button>Mua ngay</button>
+        </a>
+    </div>
+
+    <div class="product">
+        <h3>Nhẫn Ruby Cao Cấp</h3>
+        <img src="d.jpg">
+        <p>Giá: 95.000.000 VNĐ</p>
+        <a href="order.html?product=Nhẫn Ruby Cao Cấp">
+            <button>Mua ngay</button>
+        </a>
+    </div>
+
+    <div class="product">
+        <h3>Vòng Cổ Ngọc Lục Bảo</h3>
+        <img src="s.jpg">
+        <p>Giá: 90.000.000 VNĐ</p>
+        <a href="order.html?product=Vòng Cổ Ngọc Lục Bảo">
+            <button>Mua ngay</button>
+        </a>
+    </div>
+
+    <div class="product">
+        <h3>Bông Tai Vàng Trắng</h3>
+        <img src="a.jpg">
+        <p>Giá: 45.000.000 VNĐ</p>
+        <a href="order.html?product=Bông Tai Vàng Trắng">
+            <button>Mua ngay</button>
+        </a>
+    </div>
+
+    <div class="product">
+        <h3>Nhẫn Đính Hôn Kim Cương</h3>
+        <img src="p.jpg">
+        <p>Giá: 150.000.000 VNĐ</p>
+        <a href="order.html?product=Nhẫn Đính Hôn Kim Cương">
+            <button>Mua ngay</button>
+        </a>
+    </div>
+
+    <div class="product">
+        <h3>Lắc Chân Vàng Ý</h3>
+        <img src="i.jpg">
+        <p>Giá: 18.000.000 VNĐ</p>
+        <a href="order.html?product=Lắc Chân Vàng Ý">
+            <button>Mua ngay</button>
+        </a>
+    </div>
+
+    <div class="product">
+        <h3>Vòng Tay Ngọc Trai Cao Cấp</h3>
+        <img src="u.jpg">
+        <p>Giá: 45.000.000 VNĐ</p>
+        <a href="order.html?product=Vòng Tay Ngọc Trai Cao Cấp">
+            <button>Mua ngay</button>
+        </a>
+    </div>
+
+    <div class="product">
+        <h3>Set Trang Sức Cưới Hoàng Gia</h3>
+        <img src="t.jpg">
+        <p>Giá: 250.000.000 VNĐ</p>
+        <a href="order.html?product=Set Trang Sức Cưới Hoàng Gia">
+            <button>Mua ngay</button>
+        </a>
+    </div>
+    <div class="product">
+        <h3>Set Trang Sức Cưới quý tộc</h3>
+        <img src="y.jpg">
+        <p>Giá: 200.000.000 VNĐ</p>
+<a href="order.html?product=Set Trang Sức Cưới Quý Tộc">
+            <button>Mua ngay</button>
+        </a>
+    </div>
+
+</div>
+</section>
+
+</body>
+<footer>
+
+    <div>
+
+        <div class="footer-box">
+            <h3>36Shop</h3>
+            <p>Chuyên cung cấp trang sức cao cấp với thiết kế tinh xảo và đẳng cấp.</p>
+            <p>Uy tín - Chất lượng - Sang trọng</p>
+        </div>
+
+        <div >
+            <h3>Liên hệ</h3>
+            <p>📍 Địa chỉ: thôn 2 , Vinh Thanh</p>
+            <p>📞 Hotline: 0333959716</p>
+            <p>📧 Email: huutri181020088@gmail.com</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Theo dõi chúng tôi để xem được các trang sức đẳng cấp và chất lượng số 1 Việt Nam</h3>
+        </div>
+
+    </div>
+</footer>
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+if(params.get("success")){
+document.getElementById("message").innerText =
+"Yêu cầu của bạn đã được gửi đến 36Shop";
+
+setTimeout(function(){
+document.getElementById("message").innerText="";
+},5000);
+}
+
+</script>
+</html>
